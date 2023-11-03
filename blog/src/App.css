@@ -1,3 +1,44 @@
+@font-face {
+  font-family: 'Assistant';
+  src: url('./font/Assistant.ttf');
+}
+@font-face {
+  font-family: 'Merriweather';
+  src: url('./font/Merriweather-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Merriweather';
+  src: url('./font/Merriweather-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Merriweather';
+  src: url('./font/Merriweather-Black.ttf') format('truetype');
+  font-weight: 900; /* Use 900 for black */
+  font-style: normal;
+}
+
+:root {
+  --color-900 : #000;
+  --color-800 : #161F37;
+  --color-700 : #27384C;
+  --color-500 : #fff;
+
+  --ff-600 : 'Merriweather, serif';
+  --ff-500 : 'Assistant';
+
+  --fw-700 : 900;
+  --fw-600 : bold;
+  --fw-500 : normal;
+
+  --fs-600 : 1.25rem;
+  --fs-500 : 1.125rem; 
+  --fs-400 : 1rem
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -10,7 +51,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, button {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -19,10 +60,14 @@ time, mark, audio, video {
 	vertical-align: baseline;
   box-sizing: border-box;
 }
+html {
+  font-size: 1rem;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
+  flex: none;
 }
 body {
 	line-height: 1;
